@@ -1,4 +1,4 @@
-## Docker General Environment
+## Python 3.10 environment on docker
 docker environment containing Python 3.10 and major libraries
 
 ### Procedure
@@ -6,5 +6,5 @@ docker environment containing Python 3.10 and major libraries
 - `docker-compose up -d --build`
 
 ### Note
-- This folder is shared by `/app/workdir` in the docker environment
-- All folders except docker-env folder and this readme is ignored by git
+- This folder is mounted in the docker's `/app/workdir` folder
+- Only `docker-env` folder and `readme.md` are tracked by git
