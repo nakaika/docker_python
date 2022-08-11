@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "general"
-version = "1.1.0"
+version = "1.1.1"
 description = ""
 authors = ["naka"]
 
@@ -8,7 +8,7 @@ authors = ["naka"]
 # essential
 python = "3.10.4"
 pandas = "*"
-numpy = "*"
+numpy = "1.22.4" # https://github.com/google/jax/issues/11238
 scipy = "*"
 xarray = "*"
 scikit-learn = "*"
@@ -37,8 +37,8 @@ streamlit-plotly-events = "*"
 # cmdstanpy = "*"
 # mako = "*"
 # pymc3 = "*"
+# pyro-ppl = "*"
 tensorflow-probability = "*"
-pyro-ppl = "*"
 numpyro = "*"
 arviz = "*"
 
@@ -55,6 +55,9 @@ pyDOE2 = "*"
 # DL framework
 # tensorflow = "*" # Unable to find tensorflow (1.14.0)
 torch = "*"
+
+# optimization
+pymanopt = "*"
 
 # visualize
 tqdm = "*"

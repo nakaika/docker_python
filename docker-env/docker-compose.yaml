@@ -10,7 +10,7 @@ services:
         - https_proxy=${https_proxy}
     image: "python3.10"
     volumes:
-      - ./workdir:/app/workdir
+      - ../:/app/workdir
       # proxies with launched containers
     environment:
       - http_proxy=${http_proxy}

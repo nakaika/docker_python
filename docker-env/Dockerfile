@@ -1,17 +1,14 @@
 FROM debian:stable
 
-RUN apt-get update
-
-RUN apt-get install -y git
-
-# Unable git ssl-verify (if you cannot execute "git clone")
-# RUN git config --global http.sslVerify false
+RUN apt-get -y update
 
 # Install some libraries to build an environment with pyenv
+# Do not disable "sslVerify"
 RUN apt-get install -y \
     wget \
     gcc \
-    make 
+    make \
+    git
 # https://aiedoc.github.io/note/Infrastructure/OS%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89/python%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/
 RUN apt-get install -y build-essential libncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev tk-dev libssl-dev openssl libbz2-dev libreadline-dev
 
