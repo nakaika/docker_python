@@ -14,6 +14,7 @@ xarray = "*"
 scikit-learn = "*"
 sympy = "*"
 statsmodels = "*"
+autograd = "*"
 
 # utils
 pyyaml = "*"
