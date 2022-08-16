@@ -6,7 +6,7 @@ authors = ["naka"]
 
 [tool.poetry.dependencies]
 # essential
-python = "3.10.4"
+python = "3.10.6"
 pandas = "*"
 numpy = "1.22.4" # https://github.com/google/jax/issues/11238
 scipy = "*"
@@ -14,7 +14,6 @@ xarray = "*"
 scikit-learn = "*"
 sympy = "*"
 statsmodels = "*"
-autograd = "*"
 
 # utils
 pyyaml = "*"
@@ -59,6 +58,7 @@ torch = "*"
 
 # optimization
 pymanopt = "*"
+autograd = "*"
 
 # visualize
 tqdm = "*"
